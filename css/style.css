@@ -50,12 +50,18 @@ a {
 }
 
 .logo {
-  width: 277px;
+  max-width: 277px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav__list {
   display: flex;
   align-items: center;
+  transform: translateY(-2px);
 }
 
 .nav__list-item:not(:last-child) {
@@ -84,6 +90,42 @@ a {
   width: 90%;
 }
 
+.btn-nav {
+  display: none;
+  background-color: transparent;
+  padding: 5px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-element {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.btn-element::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.btn-element::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
 .account {
   display: flex;
   align-items: center;
@@ -96,10 +138,8 @@ a {
   cursor: pointer;
 }
 
-
 .phone {
   background-color: #C84500;
-
 }
 
 .phone-content {
@@ -123,12 +163,11 @@ a {
 .hero-bg {
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
   background-size: cover;
   width: 100%;
   height: 800px;
 }
-
 
 .hero-wrapper {
   padding-top: 291px;
@@ -137,10 +176,9 @@ a {
 }
 
 .hero-content {
-  width: 50%;
+  width: 572px;
   text-align: center;
 }
-
 
 .hero-h1 {
   max-width: 572px;
@@ -151,6 +189,7 @@ a {
   color: #131249;
   text-transform: capitalize;
 }
+
 .hero-text {
   margin-bottom: 57px;
   max-width: 572px;
@@ -181,6 +220,33 @@ a {
   top: 1px;
 }
 
+
+
+/* 1231456 */
+
+/* .cruiser__row {
+  display: flex;
+
+}
+.cruiser__row-filter {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 auto;
+}
+.cruiser__row-item {
+}
+.cruiser__row-item-h2 {
+}
+.cruiser__row-item-text {
+}
+.cruiser__row-item-btn {
+}
+.btn__cruiser {
+} */
+
+/* 1231456 */
+
+
 .cruiser {
   margin-bottom: 44px;
 }
@@ -189,18 +255,25 @@ a {
   padding: 15px 20px;
   margin-bottom: 27px;
   display: flex;
-  column-gap: 29px;
   align-items: center;
   box-shadow: 0px 4px 19px 1px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  column-gap: 29px;
+}
+
+.cruiser__row-filter {
+  justify-content: space-between;
+  display: flex;
+  flex: 1 0 auto;
+  column-gap: 29px;
+
 }
 
 .cruiser__row-item {
-  width: calc(100% / 4);
+  width: calc(100% / 3);
 }
 
-.cruiser__row-item:last-child {
-  text-align: right;
+.cruiser__row-item-btn {
 }
 
 .cruiser__row-item-h2 {
@@ -255,7 +328,6 @@ a {
   line-height: 1.352;
   color: #131249;
 }
-
 
 .popular-cruises {
   display: flex;
@@ -345,11 +417,11 @@ a {
   right: 16px;
 }
 
-
 .rms {
   background-color: #131249;
   margin-bottom: 33px;
 }
+
 .rms-row {
   padding: 38px 0;
   display: flex;
@@ -388,6 +460,7 @@ a {
 .rms-titanic-img {
   border-radius: 30px;
 }
+
 .rms-red {
   height: 21px;
   background-color: #C84500;
@@ -432,7 +505,6 @@ a {
   color:#fff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
-
 }
 
 .gallery-slide-big {
@@ -470,12 +542,14 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
 }
+
 .slider-content {
   position: absolute;
   max-width: 980px;
   top: 106px;
   left: 73px;
 }
+
 .slider-content-name {
   margin-bottom: 48px;
   font-size: 36px;
@@ -486,6 +560,7 @@ a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
+
 .slider-content-title {
   margin-bottom: 19px;
   font-family: 'Arizonia';
@@ -546,6 +621,7 @@ a {
   transform: translateX(-50%);
   text-align: center;
 }
+
 .hotel-name {
   margin-bottom: 395px;
   font-size: 36px;
@@ -565,7 +641,6 @@ a {
   font-family: 'Alfa Slab One';
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .awards {
   margin-bottom: 40px;
@@ -597,6 +672,7 @@ a {
 .awards-nav-item:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .awards-nav-link {
   padding-left: 10px;
   display: block;
@@ -627,8 +703,6 @@ a {
   background-size: contain;
   width: 8px;
   height: 14px;
-
-
 } 
 
 .over-footer {
@@ -639,10 +713,11 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .footer-list {
   padding: 50px 0 70px;
-
 }
+
 .footer-list-item:not(:last-child) {
   margin-bottom: 20px;
 }

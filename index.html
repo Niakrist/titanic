@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Titanic</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -23,6 +24,11 @@
             <li class="nav__list-item"><a href="#!" class="nav__list-link">Destinations</a></li>
             <li class="nav__list-item"><a href="#!" class="nav__list-link">Managr my cruise</a></li>
           </ul>
+
+          <button class="btn-nav">
+            <span class="btn-element"></span>
+          </button>
+
         </nav>
         <div class="account">
           <a href="#!" class="nav__list-link">Sign in</a>
@@ -55,35 +61,35 @@
 
   <section class="cruiser">
     <div class="container">
+      
       <div class="cruiser__row">
-        <div class="cruiser__row-item">
-          <h2 class="cruiser__row-item-h2">
-            Departing from
-          </h2>
-          <a href="#!" class="cruiser__row-item-text">
-            Choose Departure Port
-          </a>
+
+        <div class="cruiser__row-filter">
+
+          <div class="cruiser__row-item">
+            <h2 class="cruiser__row-item-h2">Departing from</h2>
+            <a href="#!" class="cruiser__row-item-text">Choose Departure Port</a>
+          </div>
+
+          <div class="cruiser__row-item">
+            <h2 class="cruiser__row-item-h2">Cruising to</h2>
+            <a href="#!" class="cruiser__row-item-text">Choose Destination</a>
+          </div>
+
+          <div class="cruiser__row-item">
+            <h2 class="cruiser__row-item-h2">Leaving</h2>
+            <a href="#!" class="cruiser__row-item-text">Choose Your Date</a>
+          </div>
+
         </div>
-        <div class="cruiser__row-item">
-          <h2 class="cruiser__row-item-h2">
-            Cruising to
-          </h2>
-          <a href="#!" class="cruiser__row-item-text">
-            Choose Destination
-          </a>
-        </div>
-        <div class="cruiser__row-item">
-          <h2 class="cruiser__row-item-h2">
-            Leaving
-          </h2>
-          <a href="#!" class="cruiser__row-item-text">
-            Choose Your Date
-          </a>
-        </div>
-        <div class="cruiser__row-item">
+
+        <div class="cruiser__row-item-btn">
           <button class="btn btn__cruiser">Search cruises</button>
         </div>
+
       </div>
+
+
       <h2 class="title-h2">Popular cruises</h2>
       <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <div class="popular-cruises">
